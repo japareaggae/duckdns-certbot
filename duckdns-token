@@ -1,0 +1,3 @@
+#!/bin/bash
+# Add your Duck DNS token here
+DUCKDNS_TOKEN="your-token-here"

@@ -1,0 +1,9 @@
+[Unit]
+Description=Weekly Certbot renewal
+
+[Timer]
+OnCalendar=Weekly
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
