@@ -10,7 +10,7 @@ Usage
 -----
 
 1. `make install`
-2. Edit /etc/systemd/system/certbot-renew.service, replacing
+2. Edit /usr/local/lib/systemd/system/certbot-renew.service, replacing
 YOUR\_DOMAIN with your actual domain
 3. Edit /etc/duckdns-token, adding your Duck DNS token
 4. Enable certbot-renew.timer
