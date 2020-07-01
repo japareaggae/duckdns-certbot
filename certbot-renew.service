@@ -7,4 +7,4 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=certbot certonly -n -q --agree-tos --manual --manual-public-ip-logging-ok -d YOUR_DOMAIN -d "*.YOUR_DOMAIN" --preferred-challenges dns --manual-auth-hook /usr/local/lib/duckdns-txt --manual-cleanup-hook "/usr/local/lib/duckdns-txt cleanup"
+ExecStart=certbot certonly -n -q --agree-tos --manual --manual-public-ip-logging-ok -d warchive.duckdns.org -d "*.warchive.duckdns.org" --preferred-challenges dns --manual-auth-hook /usr/local/lib/duckdns-certbot --manual-cleanup-hook "/usr/local/lib/duckdns-certbot cleanup"
