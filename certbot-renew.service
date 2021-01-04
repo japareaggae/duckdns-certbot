@@ -3,7 +3,8 @@
 [Unit]
 Description=Certbot renewal service for YOUR_DOMAIN
 Documentation=https://certbot.eff.org/docs/ http://www.duckdns.org/spec.jsp
-After=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=oneshot
